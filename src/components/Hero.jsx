@@ -1,5 +1,5 @@
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
-
 const FancyGrid = () => {
   return (
     <div className=" bg-[radial-gradient(circle_500px_at_100%_200px,#d5c5ff,transparent)]">
@@ -13,7 +13,7 @@ const FancyGrid = () => {
             </div>
 
             <div className="hidden lg:flex lg:ml-16 lg:items-center lg:justify-center lg:space-x-10 xl:space-x-16">
-              <a href="#" className="text-base font-medium text-gray-900 hover:text-opacity-50 font-pj"> Features </a>
+              <Link to="/features" className="text-base font-medium text-gray-900 hover:text-opacity-50 font-pj"> Features </Link>
               <a href="#" className="text-base font-medium text-gray-900 hover:text-opacity-50 font-pj"> Pricing </a>
               <a href="#" className="text-base font-medium text-gray-900 hover:text-opacity-50 font-pj"> Automation </a>
             </div>

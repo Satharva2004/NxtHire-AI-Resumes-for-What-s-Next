@@ -1,15 +1,17 @@
-import Features from "./components/Features";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import FancyGrid from "./components/Hero";
-import FancyBg from "./components/bg";
+import Layout from "./components/Layouts";
+
 const Home = () => {
   return (
-    <div className="relative">
-      <FancyBg />
-      <div className="relative z-10">
-        <FancyGrid />
-        <Features />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<FancyGrid />} />
+
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 };
 
